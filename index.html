@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Grammar Final Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">English Grammar Revision</p>
+        <h1>Interactive Final Quiz</h1>
+        <p class="subtitle">80 questions with multiple choice, arrange words, and correct/incorrect sentences from your final exam topics.</p>
+      </div>
+      <div class="score-pill" id="liveProgress">0 / 80 answered</div>
+    </section>
+
+    <section class="quiz-card" id="quizArea">
+      <div class="card-top">
+        <span id="categoryBadge" class="badge">Category</span>
+        <span id="questionNumber">Question 1 of 80</span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+
+      <h2 id="questionText">Question text</h2>
+      <div id="optionsContainer" class="options"></div>
+      <p id="helperText" class="helper"></p>
+
+      <div class="controls">
+        <button id="prevBtn" class="btn secondary">Previous</button>
+        <button id="nextBtn" class="btn primary">Next</button>
+        <button id="finishBtn" class="btn success hidden">Finish Quiz</button>
+      </div>
+    </section>
+
+    <section id="resultArea" class="result hidden">
+      <div class="result-header">
+        <h2>Your Result</h2>
+        <p id="scoreText"></p>
+        <p id="messageText"></p>
+        <button id="restartBtn" class="btn primary">Restart Quiz</button>
+      </div>
+      <h3>Answer Review</h3>
+      <div id="reviewContainer" class="review-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <h4>EN-ABDULRAZAQ-SULTAN</h4>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
